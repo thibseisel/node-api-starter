@@ -1,0 +1,26 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "Node REST API quick starter",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "description": "This server",
+      "url": "/api"
+    }
+  ],
+  "paths": {
+    "/healthcheck": {
+      "get": {
+        "summary": "Checks for server availability",
+        "description": "An endpoint that may be requested to check that server is up and running.",
+        "responses": {
+          "200": {
+            "description": "Empty response body"
+          }
+        }
+      }
+    }
+  }
+}

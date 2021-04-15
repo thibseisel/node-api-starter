@@ -1,0 +1,8 @@
+# dependencies
+node_modules/
+# build artifacts
+dist/
+coverage/
+# data definition files
+src/types/
+**/*.d.ts
