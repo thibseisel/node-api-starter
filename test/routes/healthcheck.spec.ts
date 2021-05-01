@@ -1,5 +1,5 @@
+import app from "@app/app"
 import supertest from "supertest"
-import app from "../../src/app"
 
 describe("/public/healthcheck endpoint", () => {
   const ENDPOINT_URL = "/api/healthcheck"

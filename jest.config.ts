@@ -3,7 +3,7 @@ import { Config } from "@jest/types"
 const jestConfig: Config.InitialOptions = {
   globals: {
     "ts-jest": {
-      tsconfig: "tsconfig.json",
+      tsconfig: "test/tsconfig.json",
       isolatedModules: true,
     },
   },
