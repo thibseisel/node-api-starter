@@ -4,6 +4,7 @@ const jestConfig: Config.InitialOptions = {
   globals: {
     "ts-jest": {
       tsconfig: "tsconfig.json",
+      isolatedModules: true,
     },
   },
   coveragePathIgnorePatterns: ["<rootDir>/node_modules", "<rootDir>/test"],
