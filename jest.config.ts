@@ -21,3 +21,8 @@ const jestConfig: Config.InitialOptions = {
 }
 
 export default jestConfig
+
+process.env = {
+  NODE_ENV: "development",
+  JWT_SECRET_KEY: "secret",
+}

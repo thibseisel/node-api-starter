@@ -11,6 +11,7 @@ This is a template project for quickly setting up a server-side web application 
 
 ## Pre-build features
 
+- JSON Web Token-based authentication
 - Global error handling
 - API response standardization (subclasses of `ApiResponse`)
 
@@ -120,6 +121,8 @@ Open the spec file you'd like to debug, click on the green arrow gutter icon tha
 | `compression`               | Adds Gzip compression to Express responses, making requests faster                    |
 | `express`                   | Web server framework                                                                  |
 | `express-async-handler`     | Simplifies defining express middlewares that use ES6 `async/await`                    |
+| `express-jwt`               | Add support for stateless authentication with JSON Web Tokens                         |
+| `jsonwebtoken`              | Generate and parse JSON Web Tokens                                                    |
 | `lodash`                    | Array operators and general purpose utilities                                         |
 | `luxon`                     | Safe replacement of JS `Date`                                                         |
 | `module-alias`              | Defines aliases to avoid importing modules with backwards paths                       |

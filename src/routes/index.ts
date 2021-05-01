@@ -1,17 +1,11 @@
-import apiDocs from "@app/config/api-docs.json"
-import { IS_DEV_ENVIRONMENT } from "@app/config/environment"
+import { authentication } from "@app/core/middleware"
 import { Router } from "express"
-import swaggerUi from "swagger-ui-express"
+import publicRoutes from "./public"
 
 const routes = Router()
+routes.use("/public", publicRoutes)
 
-routes.get("/healthcheck", (_req, res) => {
-  res.sendStatus(200)
-})
-
-if (IS_DEV_ENVIRONMENT) {
-  routes.use("/docs", swaggerUi.serve)
-  routes.get("/docs", swaggerUi.setup(apiDocs))
-}
+// All routes declared below this point requires token authentication.
+routes.use(authentication())
 
 export default routes

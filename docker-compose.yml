@@ -5,6 +5,7 @@ services:
     command: debug
     environment:
       NODE_ENV: development
+      JWT_SECRET_KEY: secret_key
     build: ./
     networks:
       - backend
